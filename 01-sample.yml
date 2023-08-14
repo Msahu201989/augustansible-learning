@@ -1,16 +1,16 @@
-- name: demo of play1
-  hosts: all
-  tasks:
-    - name: Print hello
-      ansible.builtin.debug:
-         msg: Hello
-
-- name: Demo of playbook
-  hosts: all
-  tasks:
-     - name: Print bye
-       ansible.builtin.debug:
-        msg: bye
+#- name: demo of play1
+#  hosts: all
+#  tasks:
+#    - name: Print hello
+#      ansible.builtin.debug:
+#         msg: Hello
+#
+#- name: Demo of playbook
+#  hosts: all
+#  tasks:
+#     - name: Print bye
+#       ansible.builtin.debug:
+#        msg: bye
 
 - name: Creating an empty file
   copy:
