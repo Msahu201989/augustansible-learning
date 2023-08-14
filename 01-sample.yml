@@ -11,3 +11,8 @@
      - name: Print bye
        ansible.builtin.debug:
         msg: bye
+
+- name: Creating an empty file
+  file:
+    path: /var/lib/jenkins
+    state: touch
