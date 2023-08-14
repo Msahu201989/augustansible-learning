@@ -13,6 +13,7 @@
         msg: bye
 
 - name: Creating an empty file
+  hosts: all
   file:
     path: /var/lib/jenkins
     state: touch
