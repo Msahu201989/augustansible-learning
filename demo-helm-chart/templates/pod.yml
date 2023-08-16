@@ -1,0 +1,8 @@
+apiVersion: v1   # API Version is required can check in cluster info
+kind: Pod
+metadata:
+   name: {{ .Values.name }}
+spec:              # Specification we want in this pod
+  containers:
+    - name: {{ .Values.containername }}
+      image: {{ .Values.imagename }}
