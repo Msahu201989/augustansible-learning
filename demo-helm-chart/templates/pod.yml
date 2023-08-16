@@ -4,5 +4,5 @@ metadata:
    name: {{ .Values.name }}
 spec:              # Specification we want in this pod
   containers:
-    - name: {{ .Values.containername }}
-      image: {{ .Values.imagename }}
+    - name: {{ .Values.containerName }}
+      image: {{ .Values.imageName }}
