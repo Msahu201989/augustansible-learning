@@ -25,7 +25,7 @@ apiVersion: v1   # API Version is required can check in cluster info
 kind: Pod
 metadata:
    name: demo2
-     labels:
+   labels:
        app: guestbook
        tier: frontend
 spec:              # Specification we want in this pod
