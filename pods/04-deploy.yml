@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: frontend-deploy
   labels:
-    app:
     tier: app1
 spec:
   replicas: 1
