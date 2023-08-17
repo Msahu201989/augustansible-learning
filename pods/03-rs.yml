@@ -26,8 +26,8 @@ kind: Pod
 metadata:
    name: demo2
    labels:
-       app: guestbook
-       tier: frontend
+     app: guestbook
+     tier: frontend
 spec:              # Specification we want in this pod
   containers:
     - name: nginx
