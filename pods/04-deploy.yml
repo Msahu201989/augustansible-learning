@@ -48,3 +48,18 @@ spec:
       port: 80
       targetPort: 80
 
+---
+
+apiVersion: v1
+kind: Service    # service is used to expose network app enable cluster IP that dont changes
+metadata:
+   name: frontend-lb
+spec:
+  type: LoadBalancer   # LB is LOad balancer service to open port we are using
+  selector:
+     tier: app1 # this will select list of pods above we have
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
